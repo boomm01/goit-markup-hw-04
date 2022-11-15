@@ -395,12 +395,12 @@ body{
 .client-list-link:hover,
 .client-list-link:focus{
 	border-color: var(--brand-color);
+	color: var(--brand-color)
 }
 
 
 
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon{
+.client-list-icon{
     fill: currentColor;
 }
 
