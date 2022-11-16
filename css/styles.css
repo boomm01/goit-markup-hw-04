@@ -32,6 +32,10 @@ body{
 	align-items: center;
 }
 
+.active{
+	color: var(--brand-color)
+}
+
 /* ----------- HEADER ----------------- */
 
 .header-border{
@@ -151,6 +155,8 @@ body{
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heto-background.jpg);
 	padding-top: 200px;
 	padding-bottom: 200px;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 .hero-titel{
 	font-style: normal;
@@ -209,7 +215,9 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 30px;
 }
+
 
 .approach-titel{
 	font-style: normal;
@@ -219,7 +227,6 @@ body{
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--text-color-N1);
-	padding-top: 30px;
 	margin-bottom: 10px;
 }
 
@@ -454,12 +461,32 @@ body{
 	margin-bottom: 9px;
 }
 
+.footer-nav-map{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.714;	
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer-nav-map:hover,
+.footer-nav-map:focus{
+	color: var(--brand-color);
+}
+
+.footer-nav-map:active{
+	color: var(--brand-color);
+}
+
 
 .footer-nav-contacts{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
@@ -586,9 +613,15 @@ body{
 	display: block;
 }
 
-.text-padding{
-	padding: 20px 24px;
+.portfolio-items-link{
+	text-decoration: none;
+	display: block;
 }
+
+.portfolio-items-link:hover,
+.portfolio-items-link:focus{
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
 
 .portfolio-titel{
 	font-style: normal;
@@ -606,4 +639,8 @@ body{
 	line-height: 1.875;
 	letter-spacing: 0.03em;
 	color: var(--contacts-color);
+}
+
+.text-padding{
+	padding: 20px 24px;
 }
