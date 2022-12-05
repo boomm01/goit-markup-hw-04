@@ -16,7 +16,7 @@
 			<a class="header-link" href="/"><span class="header-logo">Web</span>Studio</a>
 			<nav class="header-nav">
 				<ul class="header-list">
-					<li class="header-list-items"><a class="header-list-link active" href="#">Студія</a></li>
+					<li class="header-list-items"><a class="header-list-link active current" href="#">Студія</a></li>
 					<li class="header-list-items"><a class="header-list-link " href="portfolio.html">Портфоліо</a></li>
 					<li class="header-list-items"><a class="header-list-link" href="#">Контакти</a></li>
 				</ul>
@@ -43,7 +43,7 @@
 		<section class="hero">
 			<div class="container">
 				<h1 class="hero-titel">Ефективні рішення для <br> вашого бізнесу</h1>
-				<button type="button" class="hero-btn">Замовити послугу</button>
+				<button type="button" class="hero-btn" data-modal-open >Замовити послугу</button>
 			</div>
 		</section>
 		<section class="approach section-padding">
@@ -367,6 +367,17 @@
 			</div>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden" data-modal >
+		<div class="modal">
+			<button type="button" class="modal-button" data-modal-close >
+				<svg class="modal-icon" width="11" height="11">
+					<use href="./images/symbol-defs.svg#icon-icon-linkedin">
+					</use>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 </html>
 
